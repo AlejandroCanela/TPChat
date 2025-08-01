@@ -1,0 +1,10 @@
+/*section{background-color: brown;}*/
+img{width: 30px;}
+input{border-radius: 10%;}
+.sent{background-color: rgb(142, 195, 255);}
+.recieved{background-color: rgb(221, 221, 221);}
+div{background-color: aqua;}
+.status{color: grey;}
+.contact{font-weight: bold;}
+.selected{background-color: rgb(214, 214, 214);}
+.unselected{background-color: aliceblue;}
