@@ -2,10 +2,12 @@ p,h4,h3{font-family: Helvetica}
 img {
     width: 50px;
     height: 50px;
+    border-radius: 7px;
 }
 .openchat {
     width: 50px;
     height: 50px;
+    margin-left: 5px;
 }
 input {
     border-radius: 3px;
@@ -36,20 +38,37 @@ font-size: smaller;
     padding: 0px 0px 0px;
     font-size: smaller;
 }
-.contact {
+.contact{
     display: flex;
+    align-items: center;
+    padding-top: 6px;
 }
-li{padding-top: 6px;}
 .selected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #efefef;
     border-radius: 3px;
     width: 75%;
-    margin: 0;
+    gap: 2px;
 }
 .unselected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 3px;
-    margin: 0;
     width: 75%;
+    gap: 2px;
+}
+.unselected h4,
+.unselected p {
+  margin: 5px;
+  line-height: 1.2;
+}
+.selected h4,
+.selected p {
+  margin: 5px;
+  line-height: 1.2;
 }
 .fullchat {
     display: flex;
@@ -119,4 +138,7 @@ button{
 .btop{height: 30px;width: 38px;}
 .status{margin-top: 0px;}
 
-   
+@media(max-width:480px){
+.fullchat{flex: 1; flex-direction: column-reverse;}
+.sidebar {width: 100%;display: none;}
+}
